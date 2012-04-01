@@ -1,0 +1,86 @@
+# 1. Simple Operators
+tilda:\`
+leftbracket:\<
+rightbracket:\>
+leftbrace:\[
+rightbrace:\]
+leftsquig:\{
+rightsquig:\}
+atsymbol:\@
+ampersand:\&
+pound:\#
+bang:\!
+squigly:\~
+singlequote:\'
+doublequote:\"
+dollarsign:\$
+colon:\:
+semicolon:\;
+period:\.
+comma:\,
+plus:\+
+minus:\-
+slash:/
+backslash:\\
+star:\*
+equals:\=
+up:\^
+leftparen:\(
+rightparen:\)
+
+# 2. Compound Operators
+ddash:\-\-
+dplus:\+\+
+plusminus:\+\-
+minusplus:\-\+
+greatereq:\>\=
+lesseq:\<\=
+noteq:\!\=
+spaceship:\<\>
+eqeq:\=\=
+coloneq:\:\=
+lessless:\<\<
+greatergreater:\>\>
+slasheq:/=
+dbang:\!\!
+
+# 3. User declared IDs
+id:L+
+id:L(L|D|_)*(L|D)
+
+# 4. Integers
+integer:D+|\-D+
+integer:D,DDD|DD,DDD|DDD,DDD|D,DDD,DDD|DD,DDD,DDD|DDD,DDD,DDD|D,DDD,DDD,DDD
+integer:\-(D,DDD|DD,DDD|DDD,DDD|D,DDD,DDD|DD,DDD,DDD|DDD,DDD,DDD|D,DDD,DDD,DDD)
+
+# 5. Currency Literals
+currency:\$(D+.DD|.DD)
+currency:\$(D,DDD.DD|DD,DDD.DD|DDD,DDD.DD|D,DDD,DDD.DD|DD,DDD,DDD.DD|DDD,DDD,DDD.DD)
+
+# 6. Library or Package
+library:#L(L|D)*<L(L|D)+.L>
+library:#L(L|D)*<L(L|D)+>
+library:#L(L|D)* "L(L|D)+ .(L|LL|LLL)"
+library:L(L|D)* (L+|L(L|D|_)*(L|D)).(L+|L(L|D|_)*(L|D)).(L+|L(L|D|_)*(L|D));
+
+# 7. Real fixed point numbers (work on this...)
+fixed:D*.D+
+fixed:D+.D*
+fixed:D,DDD.D+|D,DDD.D*|DD,DDD.D+|DD,DDD.D*|DDD,DDD.D+|DDD,DDD.D*|D,DDD,DDD.D+|D,DDD,DDD.D*|DD,DDD,DDD.D+|DD,DDD,DDD.D*|DDD,DDD,DDD.D+|DDD,DDD,DDD.D*|D,DDD,DDD,DDD.D+|D,DDD,DDD,DDD.D*
+fixed:D+.DDD,D|D*.DDD,D|D+.DDD,DD|D*.DDD,DD|D+.DDD,DDD|D*.DDD,DDD|D+.DDD,DDD,D|D*.DDD,DDD,D|D+.DDD,DDD,DD|D*.DDD,DDD,DD|D+.DDD,DDD,DDD|D*.DDD,DDD,DDD|D+.DDD,DDD,DDD,D|D*.DDD,DDD,DDD,D
+
+# 8. Scientific Notation
+scinotation:D.D+^(\+|\-)D
+scinotation:D.D+^(\+|\-)DD
+scinotation:D.D+^(\+|\-)DDD
+
+# 9. Device or File Token
+file:\[L:(L|D)+\]
+file:\[L:(L|D)+.(L|D)*\]
+
+# 10. String Literals in quotes
+string:\"(L|D)*\"
+
+# 11. Comment Tokens
+comment:\/\*(L|D)*\*\/
+comment:\/\/(L|D)*
