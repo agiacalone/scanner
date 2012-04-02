@@ -1,4 +1,4 @@
-grave:\`
+tilda:\`
 leftbracket:\<
 rightbracket:\>
 leftbrace:\[
@@ -9,7 +9,7 @@ atsymbol:\@
 ampersand:\&
 pound:\#
 bang:\!
-tilde:\~
+squigly:\~
 singlequote:\'
 #####################doublequote:\"
 dollarsign:\$

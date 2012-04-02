@@ -1,0 +1,15 @@
+// This is a comment
+/* This is a 
+   multi-line
+   comment
+*/
+"This is a string"
+{* Squigly
+   is a crappy
+   way to m *
+   ake a comment }
+*}
+{* * /* / } // foo *
+}
+*}
+/* */* */

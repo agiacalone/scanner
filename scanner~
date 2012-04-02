@@ -1,0 +1,64 @@
+#!/usr/bin/python3
+
+# Anthony Giacalone
+# CECS 444
+# Full Scanner
+
+# This will be a port of some C++ code provided
+#  by Prof. Konig with some additional conditionals
+#  added, modified state/action/lookup tables and
+#  a bit different logic. So, basically a complete
+#  re-write of the code. But in Python.
+
+# import the tables
+from statetable import *
+from actiontable import *
+from lookuptable import *
+from rwords import *
+from codes import *
+from tokens import *
+
+# Choose the file to scan
+print("Here is the file to scan: ")
+scanned_file = open('sample.txt').read().strip(' ')  # read in file and strip lead/trail whitespace
+print(scanned_file)     # To show the user what we're scanning
+
+
+# Here starts the main portion of the program
+state = 0
+token_status = ""
+counter = 0
+buffered = 0
+
+# A giant while loop. I'll consider changing this to call a class or two, perhaps.
+while counter < len(scanned_file):
+    token = scanned_file[counter]           # token variable is the actual char input
+    
+    # compare the various tokens and determine state table value
+    current_read = tokens.gettoken(token)
+    
+    if (statetable.gettable(state, current_read) != -1) and (actiontable.gettable(state, current_read) == 1):     
+        token_status = token_status + token         # token_status is the accumulated chars
+        state = statetable.gettable(state, current_read)
+        buffered = 0
+    
+    elif (statetable.gettable(state, current_read) == -1) and (actiontable.gettable(state, current_read) == 2):
+        # Halting condition
+        buffered = 1
+        result = codes.getcode(lookuptable.gettable(state, current_read))
+        if result == "id":
+            if rwords.check_rword(token_status) == True:
+                result = "reservedword"
+
+        if result != "space":
+            print("Token Discovered is", result, "->", token_status.rstrip())
+        state = 0
+        token_status = ""    # clear the token buffer
+
+    if buffered != 1:
+        #if token == "\n": print("EOL")             # print EOL for end of line
+        counter += 1
+    else: buffered = 0
+    # end while loop
+    
+print("Done scanning")       # end of scanner
