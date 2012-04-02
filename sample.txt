@@ -1,0 +1,32 @@
+using namespace std;
+#include"math.h";
+#include"string.cpp";
+#include<iostream.h>;
+#include<vector>;
+import java.txt;
+import java.txt.string;
+// this is not allowed import java.*
+//include library functions
+program test2;
+var
+    doe,bread:money;    /*currency*/
+    a,b,ab:string;      //string variables
+    c,d,cd:int;         /*integer variables*/
+    e,gee:float;        //float type
+begin /*body*/
+    a:="bad";
+    b:=" cat";
+    ab:=a+b;            //merge strings
+    c:=12345;
+    d:=12,345,123;
+    e:=(-12,345,123);
+    bread=$12,123.05;
+    cd:=c+d;            //add unsigned integers
+    e:=444,444.13;
+    f:=(-444,444,13);
+    gee:=c+e+3.1415^^+002;  //add signed integers and reals
+    read[A:file.txt];
+    write[A:test];
+    for (a:=1; a<=10; a++)
+        readln("almost finished!");
+end. //end program
