@@ -30,3 +30,9 @@ begin /*body*/
     for (a:=1; a<=10; a++)
         readln("almost finished!");
 end. //end program
+/* Multi-Line
+Comment begins *
+here and will/ last
+for five lines
+*/
+"Test the end with a string"s

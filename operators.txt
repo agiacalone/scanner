@@ -61,13 +61,12 @@ file:\[L:(L|D)+\]
 file:\[L:(L|D)+.(L|D)*\]
 string:"([^"]|\\")*"
 comment://[^\\n]*\n
-comment:/\*(\*[^}]|[^*])*\*/
+comment:/\*(\*[^/]|[^*])*\*/
 comment:{\*(\*[^}]|[^*])*\*}
 space:\ 
 
 
 ### Double quotes bad!
 ### Library function (last one is ambigious!)
-{\*(\*[^}]|[^\*])*\*}  -> multi line comment
 
 L(L|D)*((.L(L|D))|\*)?((.L(L|D))|\*)?
