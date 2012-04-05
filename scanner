@@ -19,9 +19,9 @@ from codes import *
 from tokens import *
 
 # Choose the file to scan
-print("Here is the file to scan: ")
+#print("Here is the file to scan: ")
 scanned_file = open('sample.txt').read().strip(' ')  # read in file and strip lead/trail whitespace
-print(scanned_file)     # To show the user what we're scanning
+#print(scanned_file)     # To show the user what we're scanning
 
 
 # Here starts the main portion of the program

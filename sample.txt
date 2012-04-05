@@ -35,4 +35,7 @@ Comment begins *
 here and will/ last
 for five lines
 */
-"Test the end with a string"s
+"Test the end with a string"
+"This next should be a fixed type:"
+2.12345
+22.123,45
