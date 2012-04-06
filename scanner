@@ -29,6 +29,7 @@ state = 0
 token_status = ""
 counter = 0
 buffered = 0
+id_table = []
 
 # A giant while loop. I'll consider changing this to call a class or two, perhaps.
 while counter < len(scanned_file):
@@ -49,6 +50,11 @@ while counter < len(scanned_file):
         if result == "id":
             if rwords.check_rword(token_status) == True:
                 result = "reservedword"
+            else:
+                try:
+                    table_check = id_table.index(token_status)
+                except ValueError:
+                    id_table.append(token_status)
 
         if result != "space":
             print("Token Discovered is", result, "->", token_status.rstrip())
@@ -56,9 +62,9 @@ while counter < len(scanned_file):
         token_status = ""    # clear the token buffer
 
     if buffered != 1:
-        #if token == "\n": print("EOL")             # print EOL for end of line
         counter += 1
     else: buffered = 0
     # end while loop
     
+print("The id table:", id_table)    
 print("Done scanning")       # end of scanner
