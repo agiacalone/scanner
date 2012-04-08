@@ -12,5 +12,4 @@ class output:
         pretty_dict = 'Count' + '\t' + 'ID' + '\n\n'
         for k, v in sorted(dictionary.items(), key=lambda count: count[1], reverse=True):
             pretty_dict += (str(v) + '\t' + str(k) + '\n')
-        print(pretty_dict)
         return textbox(msg=output_message, title=output_title, text=pretty_dict, codebox=0)
