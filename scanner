@@ -14,7 +14,11 @@ from tokens import *
 from output import *
 
 # Choose the file to scan
-scanned_file = open('sample.txt').read().strip(' ')  # read in file and strip lead/trail whitespace
+try:
+    filename = output.open_file()
+    scanned_file = open(filename).read().strip(' ')  # read in file and strip lead/trail whitespace
+except:
+    exit(1)
 
 # Here starts the main portion of the program
 state = 0

@@ -2,6 +2,9 @@ from easygui import  *
 
 class output:
 
+    def open_file():
+        return fileopenbox(msg=None, title=None, default='*', filetypes=None)
+
     def output_text(result, token_status):
         return print("Token Discovered is", result, "->", token_status.rstrip())
         
