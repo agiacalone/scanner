@@ -17,6 +17,7 @@ from lookuptable import *
 from rwords import *
 from codes import *
 from tokens import *
+from output import *
 
 # Choose the file to scan
 #print("Here is the file to scan: ")
@@ -30,6 +31,7 @@ token_status = ""
 counter = 0
 buffered = 0
 id_table = []
+final_print = ""
 
 # A giant while loop. I'll consider changing this to call a class or two, perhaps.
 while counter < len(scanned_file):
@@ -54,10 +56,10 @@ while counter < len(scanned_file):
                 try:
                     table_check = id_table.index(token_status)
                 except ValueError:
-                    id_table.append(token_status)
+                    id_table.append(token_status + '\n')
 
         if result != "space":
-            print("Token Discovered is", result, "->", token_status.rstrip())
+            final_print += "Token Discovered is " + result + " -> " + token_status.rstrip() + '\n'
         state = 0
         token_status = ""    # clear the token buffer
 
@@ -65,6 +67,7 @@ while counter < len(scanned_file):
         counter += 1
     else: buffered = 0
     # end while loop
-    
-print("The id table:", id_table)    
+
+output.output_gui('Tokens Scanned:', 'Scanner', final_print)
+output.output_gui('ID Table:', 'Scanner', id_table)
 print("Done scanning")       # end of scanner
