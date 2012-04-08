@@ -4,12 +4,6 @@
 # CECS 444
 # Full Scanner
 
-# This will be a port of some C++ code provided
-#  by Prof. Konig with some additional conditionals
-#  added, modified state/action/lookup tables and
-#  a bit different logic. So, basically a complete
-#  re-write of the code. But in Python.
-
 # import the tables
 from statetable import *
 from actiontable import *
@@ -20,10 +14,7 @@ from tokens import *
 from output import *
 
 # Choose the file to scan
-#print("Here is the file to scan: ")
 scanned_file = open('sample.txt').read().strip(' ')  # read in file and strip lead/trail whitespace
-#print(scanned_file)     # To show the user what we're scanning
-
 
 # Here starts the main portion of the program
 state = 0
@@ -33,7 +24,6 @@ buffered = 0
 id_table = []
 final_print = ""
 
-# A giant while loop. I'll consider changing this to call a class or two, perhaps.
 while counter < len(scanned_file):
     token = scanned_file[counter]           # token variable is the actual char input
     
@@ -65,6 +55,7 @@ while counter < len(scanned_file):
 
     if buffered != 1:
         counter += 1
+        
     else: buffered = 0
     # end while loop
 
