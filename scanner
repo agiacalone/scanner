@@ -21,7 +21,7 @@ state = 0
 token_status = ""
 counter = 0
 buffered = 0
-id_table = []
+id_dict = {}
 final_print = ""
 
 while counter < len(scanned_file):
@@ -41,12 +41,12 @@ while counter < len(scanned_file):
         result = codes.getcode(lookuptable.gettable(state, current_read))
         if result == "id":
             if rwords.check_rword(token_status) == True:
-                result = "reservedword"
+                result = "reservedword"        
             else:
-                try:
-                    table_check = id_table.index(token_status)
-                except ValueError:
-                    id_table.append(token_status + '\n')
+                if token_status in id_dict:
+                    id_dict[token_status] += 1
+                else:
+                    id_dict[token_status] = 1
 
         if result != "space":
             final_print += "Token Discovered is " + result + " -> " + token_status.rstrip() + '\n'
@@ -60,5 +60,5 @@ while counter < len(scanned_file):
     # end while loop
 
 output.output_gui('Tokens Scanned:', 'Scanner', final_print)
-output.output_gui('ID Table:', 'Scanner', id_table)
+output.output_dict('ID Table:', 'Scanner', id_dict)
 print("Done scanning")       # end of scanner
