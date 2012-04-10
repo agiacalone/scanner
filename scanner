@@ -65,4 +65,4 @@ while counter < len(scanned_file):
 
 output.output_gui('Tokens Scanned:', 'Scanner', final_print)
 output.output_dict('ID Table:', 'Scanner', id_dict)
-print("Done scanning")       # end of scanner
+# end of program

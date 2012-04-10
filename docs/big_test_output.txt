@@ -1,0 +1,132 @@
+Token Discovered is comment -> //First are the single operators
+Token Discovered is grave -> `
+Token Discovered is leftbracket -> <
+Token Discovered is rightbracket -> >
+Token Discovered is leftbrace -> [
+Token Discovered is rightbrace -> ]
+Token Discovered is leftsquig -> {
+Token Discovered is rightsquig -> }
+Token Discovered is atsymbol -> @
+Token Discovered is ampersand -> &
+Token Discovered is pound -> #
+Token Discovered is bang -> !
+Token Discovered is tilde -> ~
+Token Discovered is singlequote -> '
+Token Discovered is dollarsign -> $
+Token Discovered is colon -> :
+Token Discovered is semicolon -> ;
+Token Discovered is period -> .
+Token Discovered is comma -> ,
+Token Discovered is plus -> +
+Token Discovered is minus -> -
+Token Discovered is slash -> /
+Token Discovered is star -> *
+Token Discovered is equal -> =
+Token Discovered is carat -> ^
+Token Discovered is leftparen -> (
+Token Discovered is rightparen -> )
+Token Discovered is comment -> /* Next are the compound operators */
+Token Discovered is ddash -> --
+Token Discovered is dplus -> ++
+Token Discovered is plusminus -> +-
+Token Discovered is minusplus -> -+
+Token Discovered is greatereq -> >=
+Token Discovered is lesseq -> <=
+Token Discovered is noteq -> !=
+Token Discovered is spaceship -> <>
+Token Discovered is eqeq -> ==
+Token Discovered is coloneq -> :=
+Token Discovered is dless -> <<
+Token Discovered is slasheq -> /=
+Token Discovered is dbang -> !!
+Token Discovered is comment -> //IDs
+Token Discovered is reservedword -> this
+Token Discovered is reservedword -> this
+Token Discovered is id -> will
+Token Discovered is id -> had
+Token Discovered is reservedword -> this
+Token Discovered is id -> all
+Token Discovered is id -> appear
+Token Discovered is id -> appear
+Token Discovered is id -> twice
+Token Discovered is id -> appear
+Token Discovered is id -> a
+Token Discovered is id -> a
+Token Discovered is id -> b
+Token Discovered is id -> hal
+Token Discovered is id -> a
+Token Discovered is id -> a
+Token Discovered is id -> a
+Token Discovered is reservedword -> this
+Token Discovered is id -> cool
+Token Discovered is id -> had
+Token Discovered is id -> good
+Token Discovered is id -> times
+Token Discovered is id -> were
+Token Discovered is id -> had
+Token Discovered is id -> all
+Token Discovered is id -> around
+Token Discovered is comment -> {*Integers*}
+Token Discovered is integer -> 1
+Token Discovered is integer -> 1234
+Token Discovered is integer -> 1,234
+Token Discovered is integer -> 1,234,567
+Token Discovered is integer -> -123
+Token Discovered is integer -> -1,234
+Token Discovered is comment -> //Currency
+Token Discovered is currency -> $555.55
+Token Discovered is currency -> $1234.56
+Token Discovered is currency -> $1,234.56
+Token Discovered is comment -> /* Library Tokens */
+Token Discovered is library -> #include"math.h"
+Token Discovered is semicolon -> ;
+Token Discovered is library -> #include"string.cpp"
+Token Discovered is semicolon -> ;
+Token Discovered is library -> #include<iostream.h>
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> {* Fixed Point Numbers *}
+Token Discovered is fixed -> 3.141
+Token Discovered is fixed -> 777.
+Token Discovered is fixed -> 3.14159
+Token Discovered is fixed -> 1,234.567
+Token Discovered is fixed -> 1,234.5678
+Token Discovered is fixed -> 1,234.567,8
+Token Discovered is comment -> // Scientific Notation
+Token Discovered is scinotation -> 3.3^+1
+Token Discovered is scinotation -> 3.14159^-1
+Token Discovered is scinotation -> 3.14159^+123
+Token Discovered is comment -> // Device/File Tokens (begins with a reserved word)
+Token Discovered is reservedword -> read
+Token Discovered is file -> [A:file.txt]
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> write
+Token Discovered is file -> [A:file9.txt]
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> /* String Literals */
+Token Discovered is string -> "hey!!`"
+Token Discovered is string -> "this should' not * break"
+Token Discovered is comment -> /* This will
+be a *
+multi-line //
+comment * with
+stuff * that would
+break it if it /
+were coded differently
+*/
+Token Discovered is comment -> {*This is the end comment*}
+
+
+Count	ID
+5	a
+3	appear
+3	had
+2	all
+1	b
+1	hal
+1	around
+1	times
+1	will
+1	twice
+1	good
+1	were
+1	cool

@@ -1,0 +1,65 @@
+//First are the single operators
+` < > [ ] { } @ & # ! ~ ' $ : ; . , + - / * = ^ ( )
+
+/* Next are the compound operators */
+-- ++ +- -+ >= <= != <> == := << /= !!
+
+//IDs
+this this
+will had
+this all
+appear appear
+twice appear
+a a b
+hal a a a
+this cool had 
+good times were had all around
+
+{*Integers*}
+1
+1234
+1,234
+1,234,567
+-123
+-1,234
+
+//Currency
+$555.55
+$1234.56
+$1,234.56
+
+/* Library Tokens */
+#include"math.h";
+#include"string.cpp";
+#include<iostream.h>;
+
+{* Fixed Point Numbers *}
+3.141
+777.
+3.14159
+1,234.567
+1,234.5678
+1,234.567,8
+
+// Scientific Notation
+3.3^+1
+3.14159^-1
+3.14159^+123
+
+// Device/File Tokens (begins with a reserved word)
+read[A:file.txt];
+write[A:file9.txt];
+
+/* String Literals */
+"hey!!`"
+"this should' not * break"
+
+/* This will
+be a *
+multi-line //
+comment * with
+stuff * that would
+break it if it /
+were coded differently
+*/
+{*This is the end comment*}

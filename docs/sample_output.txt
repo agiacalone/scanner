@@ -1,0 +1,174 @@
+Token Discovered is reservedword -> using
+Token Discovered is reservedword -> namespace
+Token Discovered is id -> std
+Token Discovered is semicolon -> ;
+Token Discovered is library -> #include"math.h"
+Token Discovered is semicolon -> ;
+Token Discovered is library -> #include"string.cpp"
+Token Discovered is semicolon -> ;
+Token Discovered is library -> #include<iostream.h>
+Token Discovered is semicolon -> ;
+Token Discovered is library -> #include<vector>
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> import
+Token Discovered is id -> java
+Token Discovered is period -> .
+Token Discovered is id -> txt
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> import
+Token Discovered is id -> java
+Token Discovered is period -> .
+Token Discovered is id -> txt
+Token Discovered is period -> .
+Token Discovered is reservedword -> string
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> // this is not allowed import java.*
+Token Discovered is comment -> //include library functions
+Token Discovered is reservedword -> program
+Token Discovered is id -> test2
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> var
+Token Discovered is id -> doe
+Token Discovered is comma -> ,
+Token Discovered is id -> bread
+Token Discovered is colon -> :
+Token Discovered is id -> money
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> /*currency*/
+Token Discovered is id -> a
+Token Discovered is comma -> ,
+Token Discovered is id -> b
+Token Discovered is comma -> ,
+Token Discovered is id -> ab
+Token Discovered is colon -> :
+Token Discovered is reservedword -> string
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> //string variables
+Token Discovered is id -> c
+Token Discovered is comma -> ,
+Token Discovered is id -> d
+Token Discovered is comma -> ,
+Token Discovered is id -> cd
+Token Discovered is colon -> :
+Token Discovered is reservedword -> int
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> /*integer variables*/
+Token Discovered is id -> e
+Token Discovered is comma -> ,
+Token Discovered is id -> gee
+Token Discovered is colon -> :
+Token Discovered is reservedword -> float
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> //float type
+Token Discovered is reservedword -> begin
+Token Discovered is comment -> /*body*/
+Token Discovered is id -> a
+Token Discovered is coloneq -> :=
+Token Discovered is string -> "bad"
+Token Discovered is semicolon -> ;
+Token Discovered is id -> b
+Token Discovered is coloneq -> :=
+Token Discovered is string -> " cat"
+Token Discovered is semicolon -> ;
+Token Discovered is id -> ab
+Token Discovered is coloneq -> :=
+Token Discovered is id -> a
+Token Discovered is plus -> +
+Token Discovered is id -> b
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> //merge strings
+Token Discovered is id -> c
+Token Discovered is coloneq -> :=
+Token Discovered is integer -> 12345
+Token Discovered is semicolon -> ;
+Token Discovered is id -> d
+Token Discovered is coloneq -> :=
+Token Discovered is integer -> 12,345,123
+Token Discovered is semicolon -> ;
+Token Discovered is id -> e
+Token Discovered is coloneq -> :=
+Token Discovered is leftparen -> (
+Token Discovered is integer -> -12,345,123
+Token Discovered is rightparen -> )
+Token Discovered is semicolon -> ;
+Token Discovered is id -> bread
+Token Discovered is equal -> =
+Token Discovered is currency -> $12,123.05
+Token Discovered is semicolon -> ;
+Token Discovered is id -> cd
+Token Discovered is coloneq -> :=
+Token Discovered is id -> c
+Token Discovered is plus -> +
+Token Discovered is id -> d
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> //add unsigned integers
+Token Discovered is id -> e
+Token Discovered is coloneq -> :=
+Token Discovered is fixed -> 444,444.13
+Token Discovered is semicolon -> ;
+Token Discovered is id -> f
+Token Discovered is coloneq -> :=
+Token Discovered is leftparen -> (
+Token Discovered is integer -> -444,444,133
+Token Discovered is period -> .
+Token Discovered is integer -> 1415
+Token Discovered is carat -> ^
+Token Discovered is carat -> ^
+Token Discovered is plus -> +
+Token Discovered is integer -> 002
+Token Discovered is semicolon -> ;
+Token Discovered is comment -> //add signed integers and reals
+Token Discovered is reservedword -> read
+Token Discovered is file -> [A:file.txt]
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> write
+Token Discovered is file -> [A:test]
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> for
+Token Discovered is leftparen -> (
+Token Discovered is id -> a
+Token Discovered is coloneq -> :=
+Token Discovered is integer -> 1
+Token Discovered is semicolon -> ;
+Token Discovered is id -> a
+Token Discovered is lesseq -> <=
+Token Discovered is integer -> 10
+Token Discovered is semicolon -> ;
+Token Discovered is id -> a
+Token Discovered is dplus -> ++
+Token Discovered is rightparen -> )
+Token Discovered is reservedword -> readln
+Token Discovered is leftparen -> (
+Token Discovered is string -> "almost finished!"
+Token Discovered is rightparen -> )
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> end
+Token Discovered is period -> .
+Token Discovered is comment -> //end program
+Token Discovered is comment -> /* Multi-Line
+Comment begins *
+here and will/ last
+for five lines
+*/
+Token Discovered is string -> "Test the end with a string"
+Token Discovered is string -> "This next should be a fixed type:"
+Token Discovered is fixed -> 2.12345
+Token Discovered is fixed -> 22.123,45
+
+Count	ID
+6	a
+3	c
+3	d
+3	b
+3	e
+2	java
+2	cd
+2	txt
+2	ab
+2	bread
+1	std
+1	test2
+1	f
+1	money
+1	doe
+1	gee

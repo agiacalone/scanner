@@ -1,0 +1,28 @@
+Token Discovered is id -> x5
+Token Discovered is equal -> =
+Token Discovered is id -> a
+Token Discovered is plus -> +
+Token Discovered is fixed -> 34.56
+Token Discovered is plus -> +
+Token Discovered is id -> tag_4_fish
+Token Discovered is plus -> +
+Token Discovered is integer -> 123
+Token Discovered is id -> zzz
+Token Discovered is semicolon -> ;
+Token Discovered is id -> y
+Token Discovered is equal -> =
+Token Discovered is id -> y
+Token Discovered is plus -> +
+Token Discovered is integer -> 1
+Token Discovered is plus -> +
+Token Discovered is fixed -> 3.14159
+Token Discovered is semicolon -> ;
+Token Discovered is reservedword -> abs
+
+Count	ID
+2	y
+1	a
+1	tag_4_fish
+1	zzz
+1	x5
+

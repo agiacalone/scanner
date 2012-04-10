@@ -1,1 +1,7 @@
-# README File
+The scanner is complete according to the specifications outlined on the project sheet. Three samples have been provided, along with screenshots of the GUI. Some highlights:
+
+1. Complete GUI input and output with file selection
+2. Added multi-line commenting for /*-based comments
+3. Nice NFA/DFA printout with good documentation
+4. Class structure is made to allow further development
+5. Error handling (try/catch) for bad input
